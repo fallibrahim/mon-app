@@ -1,0 +1,14 @@
+[ 
+      {
+      "id" : 1,
+      "name" : "huile de soja",
+      "description" : "produit bien traité et 100%",
+      "price":500
+     },
+      {
+      "id" : 2,
+      "name" : "Carbonate",
+      "description" : "produit disponible en gros et detail",
+      "price":740
+     }
+]

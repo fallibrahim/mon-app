@@ -1,0 +1,19 @@
+<h3>Chariot</h3>
+<a [routerLink]="['/expedition']">
+    Prix d'expédition
+</a>
+<div class="cart-item" *ngFor="let item of items">
+<span>{{ item.name }}</span>
+<span>{{ item.price | currency }}</span>
+</div>
+<form [formGroup]="verifierForm" (ngSubmit)="onSubmit()">
+    <div>
+        <label for="name">Nom</label><br>
+        <input id="name" type="text" formControlName="name">
+    </div>
+    <div>
+        <label for="address">Address</label><br>
+        <input id="address" type="text" formControlName="address">
+    </div><br>
+<button class="btn btn-primary" type="submit">Acheter</button>
+</form>

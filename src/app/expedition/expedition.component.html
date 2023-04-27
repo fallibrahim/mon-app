@@ -1,0 +1,10 @@
+<h3>Prix d'expédition</h3>
+<div class="shipping-item" *ngFor="let frais of fraisLivraisons | async">
+    <span>
+        {{ frais.type }}
+    </span>
+    <span>
+        {{ frais.price |currency }}
+    </span>
+
+</div>
